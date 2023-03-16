@@ -301,10 +301,7 @@
                                     <h1 class="title">Sports Escrow Bets Peer 2 Peer</h1>
                                     <p class="xlr">The fastest, easiest way to bet on sports.NBA, Tennis &amp; Soccer,
                                         Choose on which team to bet and win</p>
-                                </div>
-                                <div class="bottom-area">
-                                    <span class="btn-border">
-                                            <div class="container">
+                                    <div class="container">
       <div class="row">
         <div class="col-md-12">
 
@@ -333,6 +330,17 @@
 
             </div>
 
+            <hr>
+            <table class="table table-listing">
+              <thead>
+                <th>Address</th>
+                <th>ETH balance</th>
+              </thead>
+
+              <tbody id="accounts">
+              </tbody>
+            </table>
+
           </div>
 
           <br>
@@ -343,8 +351,17 @@
         </div>
       </div>
     </div>
-                                    </span>
-                                </div>
+
+    <!-- We use simple <template> templating for the example -->
+    <div id="templates" style="display: none">
+      <template id="template-balance">
+        <tr>
+          <th class="address"></th>
+          <td class="balance"></td>
+        </tr>
+      </template>
+    </div>
+
                             </div>
                         </div>
                     </div>
